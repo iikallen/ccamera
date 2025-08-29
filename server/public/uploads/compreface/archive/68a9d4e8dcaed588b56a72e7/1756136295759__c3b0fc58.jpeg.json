@@ -1,0 +1,37 @@
+{
+  "filename": "1756136295759__c3b0fc58.jpeg",
+  "url": "/static/uploads/compreface/archive/68a9d4e8dcaed588b56a72e7/1756136295759__c3b0fc58.jpeg",
+  "hash": "c3b0fc58a54d2baa72897abf4567ab425b272b8908240517ab5407df991b56a0",
+  "size": 738962,
+  "subjectName": "iikallen",
+  "recognized": true,
+  "createdAt": "2025-08-25T15:38:15.765Z",
+  "rawRecognize": {
+    "result": [
+      {
+        "age": {
+          "probability": 0.5769171714782715,
+          "high": 20,
+          "low": 15
+        },
+        "gender": {
+          "probability": 0.9995408058166504,
+          "value": "female"
+        },
+        "box": {
+          "probability": 0.99884,
+          "x_max": 991,
+          "y_max": 810,
+          "x_min": 554,
+          "y_min": 331
+        },
+        "subjects": [
+          {
+            "subject": "iikallen",
+            "similarity": 0.94246
+          }
+        ]
+      }
+    ]
+  }
+}

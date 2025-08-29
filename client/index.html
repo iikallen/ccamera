@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Mediasoup Client Test</title>
+</head>
+<body>
+  <video id="remoteVideo" autoplay playsinline></video>
+
+  <script src="/socket.io/socket.io.js"></script>
+  <script type="module">
+    import * as mediasoupClient from "mediasoup-client";
+
+    const socket = io("http://localhost:5000", {
+      transports: ["websocket"]
+    });
+
+    let device, recvTransport;
+
+    async function init() {
+      // 1. Запрашиваем у сервера RTP Capabilities
+      const routerRtpCapabilities = await new Promise(res => {
+        socket.emit("getRouterRtpCapabilities", res);
+      });
+
+      device = new mediasoupClient.Device();
+      await device.load({ routerRtpCapabilities });
+
+      // 2. Создаём RecvTransport (браузер -> сервер)
+      const transportOptions = await new Promise(res => {
+        socket.emit("createWebRtcTransport", { direction: "recv" }, res);
+      });
+
+      recvTransport = device.createRecvTransport({
+        ...transportOptions,
+        // ВАЖНО: сюда добавляем STUN
+        iceServers: [
+          { urls: "stun:stun.l.google.com:19302" }
+        ]
+      });
+
+      // обработчики подключения
+      recvTransport.on("connect", ({ dtlsParameters }, callback, errback) => {
+        socket.emit("connectTransport", { transportId: recvTransport.id, dtlsParameters }, callback);
+      });
+
+      // 3. Подписываемся на consumer (например, видео камеры)
+      const { id, producerId, kind, rtpParameters } = await new Promise(res => {
+        socket.emit("consume", { rtpCapabilities: device.rtpCapabilities }, res);
+      });
+
+      const consumer = await recvTransport.consume({ id, producerId, kind, rtpParameters });
+      const stream = new MediaStream();
+      stream.addTrack(consumer.track);
+
+      document.getElementById("remoteVideo").srcObject = stream;
+
+      // резюмим
+      socket.emit("resume", { consumerId: consumer.id });
+    }
+
+    init();
+  </script>
+</body>
+</html>

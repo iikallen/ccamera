@@ -1,0 +1,76 @@
+ffmpeg version 8.0-full_build-www.gyan.dev Copyright (c) 2000-2025 the FFmpeg developers
+  built with gcc 15.2.0 (Rev8, Built by MSYS2 project)
+  configuration: --enable-gpl --enable-version3 --enable-static --disable-w32threads --disable-autodetect --enable-fontconfig --enable-iconv --enable-gnutls --enable-lcms2 --enable-libxml2 --enable-gmp --enable-bzlib --enable-lzma --enable-libsnappy --enable-zlib --enable-librist --enable-libsrt --enable-libssh --enable-libzmq --enable-avisynth --enable-libbluray --enable-libcaca --enable-libdvdnav --enable-libdvdread --enable-sdl2 --enable-libaribb24 --enable-libaribcaption --enable-libdav1d --enable-libdavs2 --enable-libopenjpeg --enable-libquirc --enable-libuavs3d --enable-libxevd --enable-libzvbi --enable-liboapv --enable-libqrencode --enable-librav1e --enable-libsvtav1 --enable-libvvenc --enable-libwebp --enable-libx264 --enable-libx265 --enable-libxavs2 --enable-libxeve --enable-libxvid --enable-libaom --enable-libjxl --enable-libvpx --enable-mediafoundation --enable-libass --enable-frei0r --enable-libfreetype --enable-libfribidi --enable-libharfbuzz --enable-liblensfun --enable-libvidstab --enable-libvmaf --enable-libzimg --enable-amf --enable-cuda-llvm --enable-cuvid --enable-dxva2 --enable-d3d11va --enable-d3d12va --enable-ffnvcodec --enable-libvpl --enable-nvdec --enable-nvenc --enable-vaapi --enable-libshaderc --enable-vulkan --enable-libplacebo --enable-opencl --enable-libcdio --enable-openal --enable-libgme --enable-libmodplug --enable-libopenmpt --enable-libopencore-amrwb --enable-libmp3lame --enable-libshine --enable-libtheora --enable-libtwolame --enable-libvo-amrwbenc --enable-libcodec2 --enable-libilbc --enable-libgsm --enable-liblc3 --enable-libopencore-amrnb --enable-libopus --enable-libspeex --enable-libvorbis --enable-ladspa --enable-libbs2b --enable-libflite --enable-libmysofa --enable-librubberband --enable-libsoxr --enable-chromaprint --enable-whisper
+  libavutil      60.  8.100 / 60.  8.100
+  libavcodec     62. 11.100 / 62. 11.100
+  libavformat    62.  3.100 / 62.  3.100
+  libavdevice    62.  1.100 / 62.  1.100
+  libavfilter    11.  4.100 / 11.  4.100
+  libswscale      9.  1.100 /  9.  1.100
+  libswresample   6.  1.100 /  6.  1.100
+[rtsp @ 000001765e7e7500] Stream #0: not enough frames to estimate rate; consider increasing probesize
+Input #0, rtsp, from 'rtsp://admin:517ruyhjV13f10@192.168.0.29:554/Streaming/Channels/101':
+  Metadata:
+    title           : Media Presentation
+  Duration: N/A, bitrate: N/A
+  Stream #0:0: Video: hevc (Main), yuvj420p(pc), 2688x1520 [SAR 1:1 DAR 168:95], 25 tbr, 90k tbn
+Stream mapping:
+  Stream #0:0 -> #0:0 (hevc (native) -> h264 (libx264))
+Press [q] to stop, [?] for help
+[vist#0:0/hevc @ 000001765e82c700] DTS 158053592815917, next:40000 st:0 invalid dropping
+[vist#0:0/hevc @ 000001765e82c700] PTS 158053592815917, next:40000 invalid dropping st:0
+[vist#0:0/hevc @ 000001765e82c700] DTS 158053592817651, next:80000 st:0 invalid dropping
+[vist#0:0/hevc @ 000001765e82c700] PTS 158053592817651, next:80000 invalid dropping st:0
+[vist#0:0/hevc @ 000001765e82c700] DTS 158053592821267, next:120000 st:0 invalid dropping
+[vist#0:0/hevc @ 000001765e82c700] PTS 158053592821267, next:120000 invalid dropping st:0
+[vist#0:0/hevc @ 000001765e82c700] DTS 158053592826733, next:160000 st:0 invalid dropping
+[vist#0:0/hevc @ 000001765e82c700] PTS 158053592826733, next:160000 invalid dropping st:0
+[vist#0:0/hevc @ 000001765e82c700] DTS 158053592828463, next:200000 st:0 invalid dropping
+[vist#0:0/hevc @ 000001765e82c700] PTS 158053592828463, next:200000 invalid dropping st:0
+[vist#0:0/hevc @ 000001765e82c700] DTS 158053592832073, next:240000 st:0 invalid dropping
+[vist#0:0/hevc @ 000001765e82c700] PTS 158053592832073, next:240000 invalid dropping st:0
+[vist#0:0/hevc @ 000001765e82c700] DTS 158053592837489, next:280000 st:0 invalid dropping
+[vist#0:0/hevc @ 000001765e82c700] PTS 158053592837489, next:280000 invalid dropping st:0
+[vist#0:0/hevc @ 000001765e82c700] DTS 158053592839261, next:320000 st:0 invalid dropping
+[vist#0:0/hevc @ 000001765e82c700] PTS 158053592839261, next:320000 invalid dropping st:0
+ffmpeg version 8.0-full_build-www.gyan.dev Copyright (c) 2000-2025 the FFmpeg developers
+  built with gcc 15.2.0 (Rev8, Built by MSYS2 project)
+  configuration: --enable-gpl --enable-version3 --enable-static --disable-w32threads --disable-autodetect --enable-fontconfig --enable-iconv --enable-gnutls --enable-lcms2 --enable-libxml2 --enable-gmp --enable-bzlib --enable-lzma --enable-libsnappy --enable-zlib --enable-librist --enable-libsrt --enable-libssh --enable-libzmq --enable-avisynth --enable-libbluray --enable-libcaca --enable-libdvdnav --enable-libdvdread --enable-sdl2 --enable-libaribb24 --enable-libaribcaption --enable-libdav1d --enable-libdavs2 --enable-libopenjpeg --enable-libquirc --enable-libuavs3d --enable-libxevd --enable-libzvbi --enable-liboapv --enable-libqrencode --enable-librav1e --enable-libsvtav1 --enable-libvvenc --enable-libwebp --enable-libx264 --enable-libx265 --enable-libxavs2 --enable-libxeve --enable-libxvid --enable-libaom --enable-libjxl --enable-libvpx --enable-mediafoundation --enable-libass --enable-frei0r --enable-libfreetype --enable-libfribidi --enable-libharfbuzz --enable-liblensfun --enable-libvidstab --enable-libvmaf --enable-libzimg --enable-amf --enable-cuda-llvm --enable-cuvid --enable-dxva2 --enable-d3d11va --enable-d3d12va --enable-ffnvcodec --enable-libvpl --enable-nvdec --enable-nvenc --enable-vaapi --enable-libshaderc --enable-vulkan --enable-libplacebo --enable-opencl --enable-libcdio --enable-openal --enable-libgme --enable-libmodplug --enable-libopenmpt --enable-libopencore-amrwb --enable-libmp3lame --enable-libshine --enable-libtheora --enable-libtwolame --enable-libvo-amrwbenc --enable-libcodec2 --enable-libilbc --enable-libgsm --enable-liblc3 --enable-libopencore-amrnb --enable-libopus --enable-libspeex --enable-libvorbis --enable-ladspa --enable-libbs2b --enable-libflite --enable-libmysofa --enable-librubberband --enable-libsoxr --enable-chromaprint --enable-whisper
+  libavutil      60.  8.100 / 60.  8.100
+  libavcodec     62. 11.100 / 62. 11.100
+  libavformat    62.  3.100 / 62.  3.100
+  libavdevice    62.  1.100 / 62.  1.100
+  libavfilter    11.  4.100 / 11.  4.100
+  libswscale      9.  1.100 /  9.  1.100
+  libswresample   6.  1.100 /  6.  1.100
+[rtsp @ 0000026607c17500] Stream #0: not enough frames to estimate rate; consider increasing probesize
+Input #0, rtsp, from 'rtsp://admin:517ruyhjV13f10@192.168.0.29:554/Streaming/Channels/101':
+  Metadata:
+    title           : Media Presentation
+  Duration: N/A, bitrate: N/A
+  Stream #0:0: Video: hevc (Main), yuvj420p(pc), 2688x1520 [SAR 1:1 DAR 168:95], 25 tbr, 90k tbn
+Stream mapping:
+  Stream #0:0 -> #0:0 (hevc (native) -> h264 (libx264))
+Press [q] to stop, [?] for help
+[vist#0:0/hevc @ 0000026607c5c180] DTS 158053604363419, next:40000 st:0 invalid dropping
+[vist#0:0/hevc @ 0000026607c5c180] PTS 158053604363419, next:40000 invalid dropping st:0
+[vist#0:0/hevc @ 0000026607c5c180] DTS 158053604367129, next:80000 st:0 invalid dropping
+[vist#0:0/hevc @ 0000026607c5c180] PTS 158053604367129, next:80000 invalid dropping st:0
+[vist#0:0/hevc @ 0000026607c5c180] DTS 158053604368791, next:120000 st:0 invalid dropping
+[vist#0:0/hevc @ 0000026607c5c180] PTS 158053604368791, next:120000 invalid dropping st:0
+[vist#0:0/hevc @ 0000026607c5c180] DTS 158053604374278, next:160000 st:0 invalid dropping
+[vist#0:0/hevc @ 0000026607c5c180] PTS 158053604374278, next:160000 invalid dropping st:0
+[vist#0:0/hevc @ 0000026607c5c180] DTS 158053604377915, next:200000 st:0 invalid dropping
+[vist#0:0/hevc @ 0000026607c5c180] PTS 158053604377915, next:200000 invalid dropping st:0
+[vist#0:0/hevc @ 0000026607c5c180] DTS 158053604379626, next:240000 st:0 invalid dropping
+[vist#0:0/hevc @ 0000026607c5c180] PTS 158053604379626, next:240000 invalid dropping st:0
+[vist#0:0/hevc @ 0000026607c5c180] DTS 158053604385024, next:280000 st:0 invalid dropping
+[vist#0:0/hevc @ 0000026607c5c180] PTS 158053604385024, next:280000 invalid dropping st:0
+[vist#0:0/hevc @ 0000026607c5c180] DTS 158053604388687, next:320000 st:0 invalid dropping
+[vist#0:0/hevc @ 0000026607c5c180] PTS 158053604388687, next:320000 invalid dropping st:0
+[vist#0:0/hevc @ 0000026607c5c180] DTS 158053604390342, next:360000 st:0 invalid dropping
+[vist#0:0/hevc @ 0000026607c5c180] PTS 158053604390342, next:360000 invalid dropping st:0
+[vist#0:0/hevc @ 0000026607c5c180] DTS 158053604395847, next:400000 st:0 invalid dropping
+[vist#0:0/hevc @ 0000026607c5c180] PTS 158053604395847, next:400000 invalid dropping st:0
+[vist#0:0/hevc @ 0000026607c5c180] DTS 158053604399454, next:440000 st:0 invalid dropping
+[vist#0:0/hevc @ 0000026607c5c180] PTS 158053604399454, next:440000 invalid dropping st:0

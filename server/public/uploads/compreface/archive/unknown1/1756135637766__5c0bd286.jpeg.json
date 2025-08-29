@@ -1,0 +1,13 @@
+{
+  "filename": "1756135637766__5c0bd286.jpeg",
+  "url": "/static/uploads/compreface/archive/unknown1/1756135637766__5c0bd286.jpeg",
+  "hash": "5c0bd286a807f65fc2e01caf604c1794b7c4b7c09619e0a79a729a3072031457",
+  "size": 463147,
+  "subjectName": "unknown1",
+  "recognized": false,
+  "createdAt": "2025-08-25T15:27:17.769Z",
+  "rawRecognize": {
+    "message": "No face is found in the given image",
+    "code": 28
+  }
+}
